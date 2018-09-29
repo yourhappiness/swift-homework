@@ -15,7 +15,7 @@ enum Parameter {
 protocol Features {
   var screen: Double {get}
   var memory: Double {get}
-  var price: Double {get set}
+  var price: Double {get}
 }
 
 class Iphone: Features {
@@ -30,8 +30,6 @@ class Iphone: Features {
       else {
         return screen * memory * 50
       }
-    }
-    set {
     }
   }
   init (screen: Double, memory: Double, model: IphoneModels) {
@@ -53,8 +51,6 @@ class Samsung: Features {
       else {
         return screen * memory * 100
       }
-    }
-    set {
     }
   }
   init (screen: Double, memory: Double, model: SamsungModels) {
